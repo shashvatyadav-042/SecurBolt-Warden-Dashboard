@@ -1,0 +1,21 @@
+{
+  "name": "securbolt-frontend",
+  "version": "1.0.0",
+  "description": "SecurBolt Warden Monitoring Dashboard UI",
+  "main": "index.html",
+  "scripts": {
+    "start": "browser-sync start --server --files '*.html, *.css, *.js'",
+    "build": "echo \"No build step required for vanilla HTML/CSS\" && exit 0"
+  },
+  "keywords": [
+    "Dashboard",
+    "UI",
+    "Frontend",
+    "Industrial-Design"
+  ],
+  "author": "Shashvat Yadav",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^3.0.2"
+  }
+}
