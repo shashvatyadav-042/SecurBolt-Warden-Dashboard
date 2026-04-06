@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SecurBolt | Warden System</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <div class="terminal-container">
+        <nav class="sidebar">
+            <h2>SYSTEM</h2>
+            <ul>
+                <li><a href="#" onclick="showSection('dashboard')">Warden Dashboard</a></li>
+                <li><a href="#" onclick="showSection('recipes')">Gourmet Terminal</a></li>
+                <li><a href="#" onclick="globalUnlock()" class="danger-zone">GLOBAL UNLOCK</a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <section id="dashboard">
+                <h1>WARDEN ACCESS LOGS</h1>
+                <div class="stats">
+                    <div class="stat-card">Battery: <span id="bat-level">--%</span></div>
+                    <div class="stat-card">Status: <span id="lock-status">LOCKED</span></div>
+                </div>
+                <div class="log-window" id="logs">
+                    <p>[SYSTEM]: Initializing SecurBolt Protocol...</p>
+                </div>
+            </section>
+
+            <section id="recipes" style="display:none;">
+                <h1>GOURMET TERMINAL</h1>
+                <div class="recipe-grid">
+                    <div class="recipe-item"><strong>Sweetroll:</strong> 3x Flour, 1x Milk...</div>
+                    <div class="recipe-item"><strong>Skooma:</strong> 1x Nightshade, 2x Moon Sugar...</div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="assets/script.js"></script>
+</body>
+</html>
